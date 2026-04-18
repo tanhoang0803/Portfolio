@@ -90,7 +90,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 Deployed via **Vercel**. Push to `main` triggers automatic deployment.
 
 ```bash
-# Manual deploy (requires Vercel CLI)
 vercel --prod
 ```
 
