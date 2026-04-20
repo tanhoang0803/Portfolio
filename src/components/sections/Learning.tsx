@@ -1,6 +1,9 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { BookOpen, ExternalLink, CheckCircle2, Circle } from "lucide-react";
 
-const CURRENT_FOCUS = [
+const INITIAL_FOCUS = [
   { topic: "System Design & Enterprise Architecture patterns", done: false },
   { topic: "Advanced TypeScript — generics, decorators, utility types", done: true },
   { topic: "NestJS microservices & event-driven architecture", done: false },
@@ -35,6 +38,21 @@ const LEARNING_RESOURCES: Resource[] = [
 ];
 
 export default function Learning() {
+  const [focus, setFocus] = useState(INITIAL_FOCUS);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("learning-focus");
+    if (saved) setFocus(JSON.parse(saved));
+  }, []);
+
+  function toggle(index: number) {
+    const updated = focus.map((item, i) =>
+      i === index ? { ...item, done: !item.done } : item
+    );
+    setFocus(updated);
+    localStorage.setItem("learning-focus", JSON.stringify(updated));
+  }
+
   return (
     <section id="learning" className="py-24 px-4 bg-surface">
       <div className="max-w-6xl mx-auto">
@@ -57,26 +75,24 @@ export default function Learning() {
               Currently studying
             </h3>
             <ul className="space-y-3">
-              {CURRENT_FOCUS.map(({ topic, done }) => (
-                <li key={topic} className="flex items-start gap-3">
-                  {done ? (
-                    <CheckCircle2
-                      size={16}
-                      className="text-[#06b6d4] shrink-0 mt-0.5"
-                    />
-                  ) : (
-                    <Circle
-                      size={16}
-                      className="text-gray-600 shrink-0 mt-0.5"
-                    />
-                  )}
-                  <span
-                    className={`text-sm leading-relaxed ${
-                      done ? "text-gray-400 line-through" : "text-gray-300"
-                    }`}
+              {focus.map(({ topic, done }, i) => (
+                <li key={topic}>
+                  <button
+                    onClick={() => toggle(i)}
+                    className="flex items-start gap-3 w-full text-left group cursor-pointer"
+                    aria-label={done ? `Mark "${topic}" as not done` : `Mark "${topic}" as done`}
                   >
-                    {topic}
-                  </span>
+                    {done ? (
+                      <CheckCircle2 size={16} className="text-[#06b6d4] shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+                    ) : (
+                      <Circle size={16} className="text-gray-600 shrink-0 mt-0.5 group-hover:text-[#06b6d4] transition-colors" />
+                    )}
+                    <span className={`text-sm leading-relaxed transition-all ${
+                      done ? "text-gray-400 line-through" : "text-gray-300 group-hover:text-white"
+                    }`}>
+                      {topic}
+                    </span>
+                  </button>
                 </li>
               ))}
             </ul>
