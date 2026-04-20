@@ -28,21 +28,24 @@ type FormState = "idle" | "loading" | "success" | "error";
 
 export default function Contact() {
   const [state, setState] = useState<FormState>("idle");
-  const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!formspreeId) return;
-
     setState("loading");
+
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
 
     try {
-      const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
       if (res.ok) {
         setState("success");
@@ -116,12 +119,7 @@ export default function Contact() {
 
           {/* Right — form */}
           <div>
-            {!formspreeId ? (
-              <div className="p-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 text-sm text-yellow-400">
-                Set <code className="font-mono text-xs bg-yellow-500/10 px-1 rounded">NEXT_PUBLIC_FORMSPREE_ID</code> in{" "}
-                <code className="font-mono text-xs">.env.local</code> to enable the contact form.
-              </div>
-            ) : state === "success" ? (
+            {state === "success" ? (
               <div className="flex flex-col items-center justify-center h-full gap-3 py-12 text-center">
                 <CheckCircle2 size={40} className="text-[#06b6d4]" />
                 <p className="text-white font-medium">Message sent!</p>
