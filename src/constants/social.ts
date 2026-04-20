@@ -16,7 +16,7 @@ export const SOCIAL_LINKS = [
   },
   {
     label: "ITViec",
-    href: "https://itviec.com/",
+    href: "https://itviec.com/profile-cv",
     icon: "briefcase",
   },
 ] as const;
