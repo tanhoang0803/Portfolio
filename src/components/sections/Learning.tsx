@@ -47,8 +47,12 @@ export default function Learning() {
   useEffect(() => {
     const saved = localStorage.getItem("learning-focus");
     if (saved) {
-      const parsed = JSON.parse(saved);
-      setFocus([...parsed.filter((i: {done: boolean}) => i.done), ...parsed.filter((i: {done: boolean}) => !i.done)]);
+      const parsed: { topic: string; done: boolean }[] = JSON.parse(saved);
+      const savedTopics = new Set(parsed.map((i) => i.topic));
+      const newTopics = INITIAL_FOCUS.filter((i) => !savedTopics.has(i.topic));
+      const merged = [...parsed, ...newTopics];
+      const sorted = [...merged.filter((i) => i.done), ...merged.filter((i) => !i.done)];
+      setFocus(sorted);
     }
   }, []);
 
