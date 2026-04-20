@@ -117,6 +117,7 @@ export default function Header() {
           className="md:hidden text-gray-400 hover:text-white transition-colors"
           onClick={() => setMenuOpen((o) => !o)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>

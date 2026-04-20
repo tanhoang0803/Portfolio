@@ -146,10 +146,11 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs text-gray-500 mb-1.5">
+                    <label htmlFor="name" className="block text-xs text-gray-500 mb-1.5">
                       Full Name *
                     </label>
                     <input
+                      id="name"
                       type="text"
                       name="name"
                       required
@@ -158,10 +159,11 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs text-gray-500 mb-1.5">
+                    <label htmlFor="email" className="block text-xs text-gray-500 mb-1.5">
                       Email *
                     </label>
                     <input
+                      id="email"
                       type="email"
                       name="email"
                       required
@@ -171,10 +173,11 @@ export default function Contact() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-xs text-gray-500 mb-1.5">
+                  <label htmlFor="subject" className="block text-xs text-gray-500 mb-1.5">
                     Subject *
                   </label>
                   <input
+                    id="subject"
                     type="text"
                     name="subject"
                     required
@@ -183,10 +186,11 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs text-gray-500 mb-1.5">
+                  <label htmlFor="message" className="block text-xs text-gray-500 mb-1.5">
                     Message *
                   </label>
                   <textarea
+                    id="message"
                     name="message"
                     required
                     rows={5}
