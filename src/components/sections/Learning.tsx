@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import { BookOpen, ExternalLink, CheckCircle2, Circle } from "lucide-react";
 
 const INITIAL_FOCUS = [
+  { topic: "DSA - JavaScript", done: false },
+  { topic: "Claude Code in Action", done: false },
+  { topic: "Advanced Web App with React and Redux", done: false },
+  { topic: "Databases with PostgreSQL", done: false },
   { topic: "System Design & Enterprise Architecture patterns", done: false },
   { topic: "Advanced TypeScript — generics, decorators, utility types", done: true },
   { topic: "NestJS microservices & event-driven architecture", done: false },
