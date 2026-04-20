@@ -68,8 +68,8 @@
 - [x] `src/app/icon.tsx` — custom favicon (TH monogram via ImageResponse)
 - [x] `src/app/opengraph-image.tsx` — 1200×630 OG image (branded card)
 - [x] `prefers-reduced-motion` media query added to globals.css
-- [ ] Mobile responsiveness audit
-- [ ] Accessibility audit (keyboard nav, ARIA, contrast)
+- [x] Mobile responsiveness audit
+- [x] Accessibility audit (keyboard nav, ARIA, contrast)
 - [x] Lighthouse scores: Performance 97, Accessibility 100, Best Practices 100, SEO 100
 
 ---
