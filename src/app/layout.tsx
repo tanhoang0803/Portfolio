@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     "SaaS",
   ],
   authors: [{ name: "Tan Hoang", url: "https://github.com/tanhoang0803" }],
-  metadataBase: new URL("https://portfolio-seven-eosin-57.vercel.app"),
+  metadataBase: new URL("https://tanqhoang-portfolio.vercel.app"),
   openGraph: {
     title: "Tan Hoang — Full-Stack Engineer",
     description:
       "Junior Full-Stack Engineer building scalable enterprise systems with AI.",
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-seven-eosin-57.vercel.app",
+    url: "https://tanqhoang-portfolio.vercel.app",
   },
   twitter: {
     card: "summary_large_image",

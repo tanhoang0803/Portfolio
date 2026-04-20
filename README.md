@@ -2,7 +2,7 @@
 
 **Version:** 2026  
 **Author:** TanQHoang — hoangquoctan.1996@gmail.com  
-**Live:** https://portfolio-seven-eosin-57.vercel.app
+**Live:** https://tanqhoang-portfolio.vercel.app
 
 > Modern single-page portfolio showcasing my profile as a Junior Full-Stack Developer aiming to become a Senior Enterprise Infrastructure Architect.
 
@@ -86,8 +86,8 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 
 - **CI:** GitHub Actions — runs `type-check` + `lint` on every push/PR to `main`
 - **CD:** Vercel — auto-deploys on push to `main`
-- **Sitemap:** https://portfolio-seven-eosin-57.vercel.app/sitemap.xml
-- **Robots:** https://portfolio-seven-eosin-57.vercel.app/robots.txt
+- **Sitemap:** https://tanqhoang-portfolio.vercel.app/sitemap.xml
+- **Robots:** https://tanqhoang-portfolio.vercel.app/robots.txt
 
 ---
 
