@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-7xl font-bold text-white leading-tight mb-4">
+        <h1 className="animate-fade-up animation-delay-100 text-5xl sm:text-7xl font-bold text-white leading-tight mb-4">
           Junior{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#06b6d4] to-[#2563eb]">
             Full-Stack
@@ -32,7 +32,7 @@ export default function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mb-4 leading-relaxed">
+        <p className="animate-fade-up animation-delay-200 text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mb-4 leading-relaxed">
           Building scalable enterprise systems with AI
         </p>
         <p className="text-gray-600 text-sm max-w-md mx-auto mb-10">
@@ -43,7 +43,7 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex gap-4 justify-center flex-wrap mb-16">
+        <div className="animate-fade-up animation-delay-300 flex gap-4 justify-center flex-wrap mb-16">
           <a
             href="#projects"
             className="px-6 py-3 rounded-lg bg-[#06b6d4] text-[#0a0a0a] font-semibold hover:bg-[#06b6d4]/90 transition-all hover:scale-105 active:scale-100"
