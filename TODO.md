@@ -84,17 +84,18 @@
   - [x] `RESEND_API_KEY` set in Vercel + `.env.local`
 - [ ] **OpenAI** — AI chat widget or bio variation (backlog)
 
-## Phase 7: Final QA & Launch
-- [ ] Favicon + apple-touch-icon
-- [ ] OG image (1200×630)
-- [ ] Mobile responsiveness audit
-- [ ] Accessibility audit (keyboard nav, ARIA, contrast)
+## Phase 7: Final QA & Launch ✅
+- [x] Favicon — `TH` monogram, cyan on dark (`src/app/icon.tsx`)
+- [x] OG image 1200×630 — branded card (`src/app/opengraph-image.tsx`)
+- [x] Contact form end-to-end — Resend delivering to Gmail (check spam → mark not spam)
+- [x] Contentful CMS — 3 projects live with tech tags
+- [x] LeetCode icon — official SVG in Header + Contact
+- [x] ITViec link updated
+- [ ] Mobile responsiveness audit (manual)
+- [ ] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
 - [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
-- [ ] Cross-browser: Chrome, Firefox, Safari, Edge
-- [ ] Contact form end-to-end test on production
-- [ ] All links verified (projects, social, CTAs)
 - [ ] Custom domain setup on Vercel (optional)
-- [ ] Final production deploy
+- [ ] Mark Gmail Resend email as "Not Spam" so future emails land in inbox
 
 ---
 

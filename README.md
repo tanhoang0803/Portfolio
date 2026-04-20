@@ -67,6 +67,21 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 
 ---
 
+## Status
+
+| Phase | Status |
+|---|---|
+| 0 — Init & Config | ✅ |
+| 1 — Next.js Setup | ✅ |
+| 2 — Layout & Nav | ✅ |
+| 3 — All Sections | ✅ |
+| 4 — Deploy + Formspree | ✅ |
+| 5 — CI/CD + SEO | ✅ |
+| 6 — Contentful + Resend | ✅ |
+| 7 — Favicon + OG Image | ✅ |
+
+---
+
 ## CI/CD
 
 - **CI:** GitHub Actions — runs `type-check` + `lint` on every push/PR to `main`
