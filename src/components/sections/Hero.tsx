@@ -16,13 +16,13 @@ export default function Hero() {
         {/* Status badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#06b6d4]/30 bg-[#06b6d4]/5 mb-6">
           <span className="w-2 h-2 rounded-full bg-[#06b6d4] animate-pulse" />
-          <span className="text-[#06b6d4] text-xs font-mono tracking-widest uppercase">
+          <span className="text-[#06b6d4] text-xs font-mono tracking-wider sm:tracking-widest uppercase">
             Available for opportunities
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="animate-fade-up animation-delay-100 text-5xl sm:text-7xl font-bold text-white leading-tight mb-4">
+        <h1 className="animate-fade-up animation-delay-100 text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-4">
           Junior{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#06b6d4] to-[#2563eb]">
             Full-Stack
