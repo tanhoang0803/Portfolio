@@ -112,6 +112,7 @@
 - [x] Dark/light theme toggle — `next-themes`, Sun/Moon button in Header, CSS variables, light mode gray overrides
 - [x] Learning section expanded — Flash Cards sub-links (Cards, Cheat Sheet, Quiz Space), Codecademy, Udemy added
 - [x] Animated skill progress bars — IntersectionObserver, staggered fill, proficiency % per category
+- [x] TH logo redesigned — actual TH.png used in Header, Footer, and favicon (`src/app/icon.png` replaces `icon.tsx`)
 - [ ] Blog section powered by Contentful
 - [ ] Stripe donation / "Buy me a coffee"
 - [ ] Firebase auth for admin panel

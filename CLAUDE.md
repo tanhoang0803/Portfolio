@@ -100,9 +100,9 @@ Portfolio_Resume/
 
 ## Current Status (2026-04-20)
 - Phases 0–7 complete — site is fully live at https://tanqhoang-portfolio.vercel.app
-- Favicon: `TH` monogram via `src/app/icon.tsx`
+- Favicon: `TH.png` served via `src/app/icon.png` (replaces old `icon.tsx`)
 - OG image: 1200×630 branded card via `src/app/opengraph-image.tsx`
-- Logo: TH monogram consistent across Header, Footer, favicon, OG image
+- Logo: `public/TH.png` used in Header (`next/image`, 32px) and Footer (28px); favicon via `src/app/icon.png`
 - Contentful CMS: space `vpp5gtlerrbg`, content type `portfolioTanQHoang`, 3 entries live with tech tags
 - Resend: `/api/contact` → Gmail — working, spam resolved
 - GitHub Actions CI: lint + type-check on every push/PR
