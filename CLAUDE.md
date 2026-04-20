@@ -115,7 +115,9 @@ Portfolio_Resume/
 - Skip-to-content link, prefers-reduced-motion, aria-hidden on decorative elements
 - browserslist configured — no legacy JS polyfills
 - WCAG contrast: all readable text at gray-400 or above
-- Remaining: cross-browser manual check (Chrome, Firefox, Safari, Edge)
+- Dark/light theme toggle live — `next-themes`, CSS variables, Sun/Moon in Header
+- Learning section — Flash Cards (Cards + Cheat Sheet + Quiz Space), Codecademy, Udemy
+- Remaining: animated skill bars, cross-browser manual check
 
 ---
 

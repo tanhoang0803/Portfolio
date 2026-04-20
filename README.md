@@ -23,7 +23,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 |---|---|---|
 | 1 | Hero | Headline, subheadline, CTA |
 | 2 | About Me | Bio + career goal |
-| 3 | My Learning Space | Current learning focus |
+| 3 | My Learning Space | Flash Cards, Cheat Sheet, Quiz Space, Codecademy, Udemy |
 | 4 | Projects | 3 featured project cards |
 | 5 | Skills & Stacks | Categorized tech grid |
 | 6 | Contact | Resend-powered contact form |
@@ -81,6 +81,8 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 7 — Favicon + OG Image | ✅ |
 | 8 — Accessibility + Domain | ✅ |
 | 9 — Lighthouse + Mobile Audit | ✅ |
+| 10 — Dark/Light Theme Toggle | ✅ |
+| 11 — Learning Section Expanded | ✅ |
 
 ---
 

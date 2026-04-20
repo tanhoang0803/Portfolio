@@ -109,8 +109,10 @@
 ---
 
 ## Backlog / Future
+- [x] Dark/light theme toggle — `next-themes`, Sun/Moon button in Header, CSS variables, light mode gray overrides
+- [x] Learning section expanded — Flash Cards sub-links (Cards, Cheat Sheet, Quiz Space), Codecademy, Udemy added
+- [ ] Animated skill progress bars
 - [ ] Blog section powered by Contentful
-- [ ] Dark/light theme toggle
 - [ ] Stripe donation / "Buy me a coffee"
 - [ ] Firebase auth for admin panel
 - [ ] OpenWeather widget
