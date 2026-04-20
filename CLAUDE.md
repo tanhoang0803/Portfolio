@@ -117,7 +117,8 @@ Portfolio_Resume/
 - WCAG contrast: all readable text at gray-400 or above
 - Dark/light theme toggle live — `next-themes`, CSS variables, Sun/Moon in Header
 - Learning section — Flash Cards (Cards + Cheat Sheet + Quiz Space), Codecademy, Udemy
-- Remaining: animated skill bars, cross-browser manual check
+- Animated skill progress bars — IntersectionObserver scroll trigger, staggered fill, proficiency % in `constants/skills.ts`
+- Remaining: cross-browser manual check
 
 ---
 

@@ -83,6 +83,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 9 — Lighthouse + Mobile Audit | ✅ |
 | 10 — Dark/Light Theme Toggle | ✅ |
 | 11 — Learning Section Expanded | ✅ |
+| 12 — Animated Skill Progress Bars | ✅ |
 
 ---
 
