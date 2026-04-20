@@ -1,4 +1,5 @@
 import { NAV_LINKS } from "@/constants/navigation";
+import THMonogram from "@/components/ui/THMonogram";
 
 export default function Footer() {
   return (
@@ -7,14 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
           <div className="flex items-center gap-2">
-            <span
-              className="relative w-7 h-7 rounded-lg overflow-hidden flex items-center justify-center shrink-0"
-              style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)" }}
-            >
-              <span className="absolute top-1 left-1 w-2 h-0.5 rounded-full bg-[#06b6d4]" />
-              <span className="absolute right-1 top-2 w-0.5 h-2 rounded-full bg-orange-400" />
-              <span className="text-white font-extrabold text-[9px] tracking-tight">TH</span>
-            </span>
+            <THMonogram size={28} uid="footer" />
             <span className="text-sm font-medium text-foreground">Tan Hoang</span>
           </div>
 

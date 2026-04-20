@@ -11,7 +11,7 @@ export default function Icon() {
           width: 32,
           height: 32,
           borderRadius: 8,
-          background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)",
+          background: "linear-gradient(135deg, #060e1c 0%, #0c1e38 100%)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -19,36 +19,38 @@ export default function Icon() {
           overflow: "hidden",
         }}
       >
-        {/* Cyan accent bar — top left */}
+        {/* Sparkle top-right */}
         <div
           style={{
             position: "absolute",
-            top: 3,
-            left: 3,
-            width: 10,
-            height: 3,
-            borderRadius: 2,
-            background: "#06b6d4",
+            top: 4,
+            right: 5,
+            width: 2,
+            height: 2,
+            borderRadius: "50%",
+            background: "#60c8e8",
+            opacity: 0.8,
             display: "flex",
           }}
         />
-        {/* Peach accent bar — right side */}
+        {/* Sparkle bottom-left */}
         <div
           style={{
             position: "absolute",
-            right: 3,
-            top: 10,
-            width: 3,
-            height: 10,
-            borderRadius: 2,
-            background: "#fb923c",
+            bottom: 6,
+            left: 4,
+            width: 1.5,
+            height: 1.5,
+            borderRadius: "50%",
+            background: "#60c8e8",
+            opacity: 0.6,
             display: "flex",
           }}
         />
-        {/* TH text */}
+        {/* TH text — metallic white-blue */}
         <span
           style={{
-            color: "#ffffff",
+            color: "#c8e0f0",
             fontSize: 11,
             fontWeight: 800,
             fontFamily: "sans-serif",
@@ -58,6 +60,20 @@ export default function Icon() {
         >
           TH
         </span>
+        {/* Bottom cyan dot */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 3,
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: 3,
+            height: 3,
+            borderRadius: "50%",
+            background: "#06c8e8",
+            display: "flex",
+          }}
+        />
       </div>
     ),
     { ...size }

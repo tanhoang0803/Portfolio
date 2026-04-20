@@ -5,6 +5,7 @@ import { Menu, X, Briefcase, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { NAV_LINKS } from "@/constants/navigation";
 import { SOCIAL_LINKS } from "@/constants/social";
+import THMonogram from "@/components/ui/THMonogram";
 
 function GitHubIcon({ size = 18 }: { size?: number }) {
   return (
@@ -76,15 +77,8 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group" onClick={closeMenu}>
-          <span className="relative w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shrink-0"
-            style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)" }}
-          >
-            {/* Cyan accent bar — top left */}
-            <span className="absolute top-1 left-1 w-2.5 h-0.5 rounded-full bg-[#06b6d4]" />
-            {/* Peach accent bar — right side */}
-            <span className="absolute right-1 top-2.5 w-0.5 h-2.5 rounded-full bg-orange-400" />
-            {/* TH text */}
-            <span className="text-white font-extrabold text-[10px] tracking-tight">TH</span>
+          <span className="shrink-0">
+            <THMonogram size={32} uid="header" />
           </span>
           <span className="font-semibold text-foreground text-sm tracking-wide">
             Tan Hoang

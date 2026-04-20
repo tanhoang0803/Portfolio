@@ -38,17 +38,19 @@ export default function OGImage() {
             width: 72,
             height: 72,
             borderRadius: 18,
-            background: "#111827",
-            border: "2px solid #06b6d4",
+            background: "linear-gradient(135deg, #060e1c 0%, #0c1e38 100%)",
+            border: "1.5px solid #1a4060",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             marginBottom: 40,
+            position: "relative",
           }}
         >
-          <span style={{ color: "#06b6d4", fontSize: 28, fontWeight: 700, display: "flex" }}>
+          <span style={{ color: "#c8e0f0", fontSize: 28, fontWeight: 800, fontFamily: "sans-serif", letterSpacing: -1, display: "flex" }}>
             TH
           </span>
+          <div style={{ position: "absolute", bottom: 6, left: "50%", width: 5, height: 5, borderRadius: "50%", background: "#06c8e8", display: "flex" }} />
         </div>
 
         {/* Badge */}
