@@ -65,8 +65,9 @@
 - [x] GitHub Actions CI: lint + type-check on every push/PR (`/.github/workflows/ci.yml`)
 - [x] `sitemap.xml` + `robots.txt` — Next.js App Router generated routes
 - [x] Section entrance animations (CSS fade-up keyframes on Hero)
-- [ ] `public/favicon.ico` — custom favicon
-- [ ] `public/og-image.png` — 1200×630 OG image
+- [x] `src/app/icon.tsx` — custom favicon (TH monogram via ImageResponse)
+- [x] `src/app/opengraph-image.tsx` — 1200×630 OG image (branded card)
+- [x] `prefers-reduced-motion` media query added to globals.css
 - [ ] Mobile responsiveness audit
 - [ ] Accessibility audit (keyboard nav, ARIA, contrast)
 - [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
@@ -91,21 +92,16 @@
 - [x] Contentful CMS — 3 projects live with tech tags
 - [x] LeetCode icon — official SVG in Header + Contact
 - [x] ITViec link updated
+- [x] TH monogram logo — Header, Footer, favicon, OG image all consistent
+- [x] LeetCode icon — official SVG in Header + Contact section
+- [x] ITViec social link updated
+- [x] Accessibility — form label/id pairs, `aria-expanded` on mobile menu
+- [x] Custom Vercel alias — `tanqhoang-portfolio.vercel.app` active
+- [x] All URL references updated across codebase
+- [x] Mark Gmail Resend email as "Not Spam" — resolved
 - [ ] Mobile responsiveness audit (manual)
 - [ ] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
 - [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
-- [ ] Custom domain setup on Vercel (optional)
-- [ ] Mark Gmail Resend email as "Not Spam" so future emails land in inbox
-
----
-
-## Phase 7: Final QA & Launch
-- [ ] Cross-browser: Chrome, Firefox, Safari, Edge
-- [ ] Mobile: iOS Safari, Android Chrome
-- [ ] Contact form end-to-end test
-- [ ] All links verified (projects, social, CTAs)
-- [ ] Custom domain setup on Vercel (optional)
-- [ ] Final production deploy
 
 ---
 

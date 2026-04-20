@@ -99,14 +99,17 @@ Portfolio_Resume/
 - LeetCode: https://leetcode.com/u/tanhoang0803/
 
 ## Current Status (2026-04-20)
-- Phases 0–7 complete — site is fully live
+- Phases 0–7 complete — site is fully live at https://tanqhoang-portfolio.vercel.app
 - Favicon: `TH` monogram via `src/app/icon.tsx`
 - OG image: 1200×630 branded card via `src/app/opengraph-image.tsx`
-- Contentful CMS: space `vpp5gtlerrbg`, content type `portfolioTanQHoang`, 3 entries live
-- Resend: `/api/contact` → Gmail (mark Resend emails as Not Spam)
+- Logo: TH monogram consistent across Header, Footer, favicon, OG image
+- Contentful CMS: space `vpp5gtlerrbg`, content type `portfolioTanQHoang`, 3 entries live with tech tags
+- Resend: `/api/contact` → Gmail — working, spam resolved
 - GitHub Actions CI: lint + type-check on every push/PR
 - sitemap.xml + robots.txt prerendered
-- Remaining: mobile audit, Lighthouse, optional custom domain
+- Accessibility: form label/id pairs, aria-expanded, prefers-reduced-motion
+- Custom domain alias: `tanqhoang-portfolio.vercel.app` active on Vercel
+- Remaining: mobile audit, Lighthouse
 
 ---
 

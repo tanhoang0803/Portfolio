@@ -26,7 +26,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 3 | My Learning Space | Current learning focus |
 | 4 | Projects | 3 featured project cards |
 | 5 | Skills & Stacks | Categorized tech grid |
-| 6 | Contact | Formspree contact form |
+| 6 | Contact | Resend-powered contact form |
 
 ---
 
@@ -79,6 +79,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 5 — CI/CD + SEO | ✅ |
 | 6 — Contentful + Resend | ✅ |
 | 7 — Favicon + OG Image | ✅ |
+| 8 — Accessibility + Domain | ✅ |
 
 ---
 
