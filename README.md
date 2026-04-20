@@ -8,6 +8,33 @@
 
 ---
 
+## Badges
+
+### CI / CD
+[![CI](https://github.com/tanhoang0803/Portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/tanhoang0803/Portfolio/actions/workflows/ci.yml)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel&logoColor=white)](https://tanqhoang-portfolio.vercel.app)
+
+### Tech Stack
+![Next.js](https://img.shields.io/badge/Next.js%2015-000000?logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS%20v4-06B6D4?logo=tailwindcss&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![Contentful](https://img.shields.io/badge/Contentful-2478CC?logo=contentful&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?logo=stripe&logoColor=white)
+
+### Quality
+![Lighthouse Performance](https://img.shields.io/badge/Lighthouse%20Performance-97-2563EB?logo=lighthouse&logoColor=white)
+![Lighthouse Accessibility](https://img.shields.io/badge/Lighthouse%20Accessibility-100-06B6D4?logo=lighthouse&logoColor=white)
+![Lighthouse SEO](https://img.shields.io/badge/Lighthouse%20SEO-100-06B6D4?logo=lighthouse&logoColor=white)
+
+---
+
 ## Overview
 
 A clean, professional, dark-themed portfolio built with **Next.js 15 + TypeScript**.  
