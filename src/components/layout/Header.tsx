@@ -16,16 +16,21 @@ function GitHubIcon({ size = 18 }: { size?: number }) {
 function LeetCodeIcon({ size = 18 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      {/* C-bracket: upper arm diagonal top-right → left tip, lower arm left tip → bottom-right */}
+      {/* Curved C-bracket */}
       <path
-        d="M13 3L3.5 12L11 21"
+        d="M12 4C9 4 3 7.5 3 12C3 16.5 9 20 12 20"
         stroke="currentColor"
-        strokeWidth="3"
+        strokeWidth="2.5"
         strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="none"
       />
-      {/* Horizontal bar through the middle */}
-      <rect x="8" y="10.6" width="13" height="2.8" rx="1.4" fill="currentColor" />
+      {/* Horizontal bar */}
+      <path
+        d="M9.5 12H21"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
