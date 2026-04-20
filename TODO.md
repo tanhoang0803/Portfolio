@@ -73,16 +73,28 @@
 
 ---
 
-## Phase 6: Advanced Integrations (Future)
-- [ ] **Contentful CMS** — fetch projects dynamically
-  - [ ] Create Contentful space + `project` content type
-  - [ ] `src/lib/contentful.ts` — SDK client + `getProjects()`
-  - [ ] Replace static project data with Contentful fetch
-- [ ] **Resend** — email notification on contact form submit
-  - [ ] `src/app/api/contact/route.ts`
-- [ ] **OpenAI** — AI chat widget or bio variation
-  - [ ] `src/lib/openai.ts`
-  - [ ] Rate limiting / cost guard
+## Phase 6: Advanced Integrations ✅
+- [x] **Contentful CMS** — projects fetched dynamically
+  - [x] Space: `vpp5gtlerrbg`, content type: `portfolioTanQHoang`
+  - [x] `src/lib/contentful.ts` — SDK client + `getProjects()` with static fallback
+  - [x] Rich Text description handled via `documentToPlainTextString`
+  - [x] 3 entries published and live
+- [x] **Resend** — email sent to Gmail on contact form submit
+  - [x] `src/app/api/contact/route.ts` — replaces Formspree direct POST
+  - [x] `RESEND_API_KEY` set in Vercel + `.env.local`
+- [ ] **OpenAI** — AI chat widget or bio variation (backlog)
+
+## Phase 7: Final QA & Launch
+- [ ] Favicon + apple-touch-icon
+- [ ] OG image (1200×630)
+- [ ] Mobile responsiveness audit
+- [ ] Accessibility audit (keyboard nav, ARIA, contrast)
+- [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
+- [ ] Cross-browser: Chrome, Firefox, Safari, Edge
+- [ ] Contact form end-to-end test on production
+- [ ] All links verified (projects, social, CTAs)
+- [ ] Custom domain setup on Vercel (optional)
+- [ ] Final production deploy
 
 ---
 

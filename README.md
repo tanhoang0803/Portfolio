@@ -36,11 +36,11 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
 - **Icons:** Lucide React
-- **Form:** Formspree
-- **CMS:** Contentful
-- **Deployment:** Vercel
-- **AI:** OpenAI API
+- **Form:** Resend (`/api/contact` route)
+- **CMS:** Contentful (space `vpp5gtlerrbg`)
+- **Deployment:** Vercel (auto-deploy on push to `main`)
 - **Email:** Resend
+- **CI:** GitHub Actions (lint + type-check)
 
 ---
 
