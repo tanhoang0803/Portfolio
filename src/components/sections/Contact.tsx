@@ -89,7 +89,7 @@ export default function Contact() {
           {/* Left — info */}
           <div className="space-y-6">
             <div>
-              <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">
                 Email
               </p>
               <a
@@ -100,7 +100,7 @@ export default function Contact() {
               </a>
             </div>
             <div>
-              <p className="text-xs text-gray-600 uppercase tracking-wider mb-2">
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">
                 Find me on
               </p>
               <div className="flex gap-4">

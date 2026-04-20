@@ -99,7 +99,7 @@ export default function Learning() {
                 &ldquo;Every senior engineer was once a junior who kept
                 learning, shipping, and asking the hard questions.&rdquo;
               </p>
-              <footer className="text-xs text-gray-600 mt-2">
+              <footer className="text-xs text-gray-500 mt-2">
                 — Personal mantra
               </footer>
             </blockquote>
