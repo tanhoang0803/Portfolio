@@ -11,20 +11,49 @@ export default function Icon() {
           width: 32,
           height: 32,
           borderRadius: 8,
-          background: "#0a0a0a",
-          border: "1.5px solid #06b6d4",
+          background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
+        {/* Cyan accent bar — top left */}
+        <div
+          style={{
+            position: "absolute",
+            top: 3,
+            left: 3,
+            width: 10,
+            height: 3,
+            borderRadius: 2,
+            background: "#06b6d4",
+            display: "flex",
+          }}
+        />
+        {/* Peach accent bar — right side */}
+        <div
+          style={{
+            position: "absolute",
+            right: 3,
+            top: 10,
+            width: 3,
+            height: 10,
+            borderRadius: 2,
+            background: "#fb923c",
+            display: "flex",
+          }}
+        />
+        {/* TH text */}
         <span
           style={{
-            color: "#06b6d4",
-            fontSize: 13,
-            fontWeight: 700,
+            color: "#ffffff",
+            fontSize: 11,
+            fontWeight: 800,
             fontFamily: "sans-serif",
             letterSpacing: "-0.5px",
+            display: "flex",
           }}
         >
           TH
