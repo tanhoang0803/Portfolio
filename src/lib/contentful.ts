@@ -26,6 +26,12 @@ interface ContentfulProjectFields {
 
 type ProjectSkeleton = EntrySkeletonType<ContentfulProjectFields, typeof CONTENT_TYPE>;
 
+const PROJECT_ICONS: Record<string, string> = {
+  "telemedicine-booking-platform": "Stethoscope",
+  "recipe-finder-and-meal-planner": "UtensilsCrossed",
+  "smart-fleet-predictive-iot-engine": "Cpu",
+};
+
 // Static tech tags fallback — mirrors Contentful techTags field
 const TECH_TAGS: Record<string, string[]> = {
   "telemedicine-booking-platform": ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "i18n", "MongoDB", "Resend", "Daily.co", "Contentful", "GitHub Actions", "Vercel"],
@@ -57,6 +63,7 @@ export async function getProjects(): Promise<Project[]> {
       liveUrl: item.fields.liveUrl ?? "",
       githubUrl: item.fields.gitHubUrl ?? "",
       featured: item.fields.featured ?? false,
+      icon: PROJECT_ICONS[item.fields.slug] ?? "ExternalLink",
     }));
   } catch {
     return PROJECTS;

@@ -3,6 +3,7 @@ import type { Project } from "@/types";
 export const PROJECTS: Project[] = [
   {
     id: "telemedicine",
+    icon: "Stethoscope",
     title: "Telemedicine Booking Platform",
     description:
       "A full-stack mini telemedicine platform with appointment booking, doctor listings, and multi-language support. Built with Next.js App Router, TypeScript, and Stripe payments.",
@@ -13,6 +14,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "recipe-finder",
+    icon: "UtensilsCrossed",
     title: "Recipe Finder & Meal Planner",
     description:
       "Smart recipe discovery app with AI-powered meal planning. Search by ingredients, save favourites, and auto-generate weekly plans powered by OpenAI.",
@@ -23,6 +25,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "smart-fleet",
+    icon: "Cpu",
     title: "Smart Fleet Predictive IoT Engine",
     description:
       "Enterprise-grade IoT logistics engine with predictive maintenance, real-time fleet tracking, and anomaly detection. Designed for scalable infrastructure deployment.",

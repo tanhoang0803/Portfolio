@@ -6,6 +6,7 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;
+  icon?: string;
 }
 
 export interface SkillCategory {

@@ -1,7 +1,7 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Stethoscope, UtensilsCrossed, Cpu, type LucideProps } from "lucide-react";
 import type { Project } from "@/types";
 
-function GitHubIcon({ size = 14 }: { size?: number }) {
+function GitHubIcon({ size = 18 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
       <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.52 11.52 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z" />
@@ -9,13 +9,24 @@ function GitHubIcon({ size = 14 }: { size?: number }) {
   );
 }
 
+type IconComponent = React.ComponentType<LucideProps>;
+
+const ICON_MAP: Record<string, IconComponent> = {
+  Stethoscope,
+  UtensilsCrossed,
+  Cpu,
+  ExternalLink,
+};
+
 export default function ProjectCard({ project }: { project: Project }) {
+  const Icon = ICON_MAP[project.icon ?? "ExternalLink"] ?? ExternalLink;
+
   return (
-    <div className="group flex flex-col p-6 rounded-2xl border border-[#374151] bg-[#111827] hover:border-[#06b6d4]/50 hover:bg-[#111827] transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.07)]">
+    <div className="group flex flex-col p-6 rounded-2xl border border-[#374151] bg-[#111827] hover:border-[#06b6d4]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.07)]">
       {/* Top row */}
       <div className="flex items-start justify-between mb-4">
         <div className="w-10 h-10 rounded-xl bg-[#06b6d4]/10 flex items-center justify-center group-hover:bg-[#06b6d4]/20 transition-colors">
-          <ExternalLink size={18} className="text-[#06b6d4]" />
+          <Icon size={20} className="text-[#06b6d4]" />
         </div>
         <div className="flex items-center gap-3">
           {project.githubUrl && (
