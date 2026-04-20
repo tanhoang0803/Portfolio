@@ -42,15 +42,19 @@ export default function Learning() {
 
   useEffect(() => {
     const saved = localStorage.getItem("learning-focus");
-    if (saved) setFocus(JSON.parse(saved));
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      setFocus([...parsed.filter((i: {done: boolean}) => i.done), ...parsed.filter((i: {done: boolean}) => !i.done)]);
+    }
   }, []);
 
-  function toggle(index: number) {
-    const updated = focus.map((item, i) =>
-      i === index ? { ...item, done: !item.done } : item
+  function toggle(topic: string) {
+    const updated = focus.map((item) =>
+      item.topic === topic ? { ...item, done: !item.done } : item
     );
-    setFocus(updated);
-    localStorage.setItem("learning-focus", JSON.stringify(updated));
+    const sorted = [...updated.filter((i) => i.done), ...updated.filter((i) => !i.done)];
+    setFocus(sorted);
+    localStorage.setItem("learning-focus", JSON.stringify(sorted));
   }
 
   return (
@@ -75,10 +79,10 @@ export default function Learning() {
               Currently studying
             </h3>
             <ul className="space-y-3">
-              {focus.map(({ topic, done }, i) => (
+              {focus.map(({ topic, done }) => (
                 <li key={topic}>
                   <button
-                    onClick={() => toggle(i)}
+                    onClick={() => toggle(topic)}
                     className="flex items-start gap-3 w-full text-left group cursor-pointer"
                     aria-label={done ? `Mark "${topic}" as not done` : `Mark "${topic}" as done`}
                   >
