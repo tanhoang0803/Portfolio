@@ -95,13 +95,16 @@
 - [x] TH monogram logo — Header, Footer, favicon, OG image all consistent
 - [x] LeetCode icon — official SVG in Header + Contact section
 - [x] ITViec social link updated
-- [x] Accessibility — form label/id pairs, `aria-expanded` on mobile menu
+- [x] Accessibility — form label/id pairs, `aria-expanded` on mobile menu, `prefers-reduced-motion`, skip-to-content link
+- [x] JSON-LD Person schema added for SEO rich results
+- [x] Contrast ratio fixed — `text-gray-600/500` → `text-gray-400` on all readable text
+- [x] `browserslist` configured — eliminates legacy JS polyfills (saves ~11 KiB)
 - [x] Custom Vercel alias — `tanqhoang-portfolio.vercel.app` active
 - [x] All URL references updated across codebase
 - [x] Mark Gmail Resend email as "Not Spam" — resolved
-- [ ] Mobile responsiveness audit (manual)
-- [ ] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
+- [x] Mobile responsiveness audit — h1 responsive sizing, badge tracking, no overflow issues
 - [x] Lighthouse scores: Performance 97, Accessibility 100, Best Practices 100, SEO 100
+- [ ] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
 
 ---
 

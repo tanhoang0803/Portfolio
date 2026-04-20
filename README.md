@@ -80,6 +80,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 6 — Contentful + Resend | ✅ |
 | 7 — Favicon + OG Image | ✅ |
 | 8 — Accessibility + Domain | ✅ |
+| 9 — Lighthouse + Mobile Audit | ✅ |
 
 ---
 

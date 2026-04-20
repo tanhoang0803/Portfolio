@@ -110,7 +110,12 @@ Portfolio_Resume/
 - Accessibility: form label/id pairs, aria-expanded, prefers-reduced-motion
 - Custom domain alias: `tanqhoang-portfolio.vercel.app` active on Vercel
 - Lighthouse: Performance 97, Accessibility 100, Best Practices 100, SEO 100
-- Remaining: mobile audit (manual)
+- Mobile audit complete — responsive h1, badge tracking, no overflow issues
+- JSON-LD Person schema in layout.tsx
+- Skip-to-content link, prefers-reduced-motion, aria-hidden on decorative elements
+- browserslist configured — no legacy JS polyfills
+- WCAG contrast: all readable text at gray-400 or above
+- Remaining: cross-browser manual check (Chrome, Firefox, Safari, Edge)
 
 ---
 
