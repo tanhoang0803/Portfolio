@@ -88,6 +88,8 @@ Portfolio_Resume/
 
 ## Key Links
 
+- **Live Site:** https://portfolio-seven-eosin-57.vercel.app
+- **GitHub Repo:** https://github.com/tanhoang0803/Portfolio
 - Learning Space: https://tanhoang0803.github.io/Fash-Cards-for-my-Life/
 - Project 1 (Telemedicine): https://telemedicine-booking-platform-mini.vercel.app/en
 - Project 2 (Recipe Finder): https://recipe-finder-meal-planner-jet.vercel.app/
@@ -95,6 +97,11 @@ Portfolio_Resume/
 - GitHub: https://github.com/tanhoang0803
 - LinkedIn: https://www.linkedin.com/in/tanqhoang080396/
 - LeetCode: https://leetcode.com/u/tanhoang0803/
+
+## Current Status (2026-04-20)
+- Phases 0–4 complete — site is live on Vercel
+- Formspree contact form active (ID: `mlgalbpg`)
+- Next: Phase 5 — GitHub Actions CI + SEO polish
 
 ---
 
