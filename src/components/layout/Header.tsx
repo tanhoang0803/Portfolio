@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Code2, Briefcase } from "lucide-react";
+import { Menu, X, Briefcase } from "lucide-react";
 import { NAV_LINKS } from "@/constants/navigation";
 import { SOCIAL_LINKS } from "@/constants/social";
 
@@ -59,8 +59,15 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group" onClick={closeMenu}>
-          <span className="w-8 h-8 rounded-full bg-[#06b6d4]/20 border border-[#06b6d4]/50 flex items-center justify-center group-hover:bg-[#06b6d4]/30 transition-colors">
-            <Code2 size={16} className="text-[#06b6d4]" />
+          <span className="relative w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shrink-0"
+            style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)" }}
+          >
+            {/* Cyan accent bar — top left */}
+            <span className="absolute top-1 left-1 w-2.5 h-0.5 rounded-full bg-[#06b6d4]" />
+            {/* Peach accent bar — right side */}
+            <span className="absolute right-1 top-2.5 w-0.5 h-2.5 rounded-full bg-orange-400" />
+            {/* TH text */}
+            <span className="text-white font-extrabold text-[10px] tracking-tight">TH</span>
           </span>
           <span className="font-semibold text-white text-sm tracking-wide">
             Tan Hoang
