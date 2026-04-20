@@ -58,7 +58,7 @@ export default function Skills() {
                 </div>
 
                 {/* Skill pills */}
-                <div className="flex flex-wrap gap-2 flex-1">
+                <div className="flex flex-wrap gap-2 flex-1 items-start content-start">
                   {skills.map((skill) => (
                     <span
                       key={skill}
