@@ -46,6 +46,22 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Tan Hoang",
+  url: "https://tanqhoang-portfolio.vercel.app",
+  email: "hoangquoctan.1996@gmail.com",
+  jobTitle: "Junior Full-Stack Engineer",
+  description:
+    "Junior Full-Stack Engineer building scalable enterprise systems with AI. Aiming to become a Senior Enterprise Infrastructure Architect.",
+  sameAs: [
+    "https://github.com/tanhoang0803",
+    "https://www.linkedin.com/in/tanqhoang080396/",
+    "https://leetcode.com/u/tanhoang0803/",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -56,6 +72,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0a0a] text-[#f9fafb]`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <a href="#hero" className="skip-to-content">
+          Skip to content
+        </a>
         <Header />
         <main>{children}</main>
         <Footer />
