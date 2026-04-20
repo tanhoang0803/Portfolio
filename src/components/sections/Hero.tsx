@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-b from-[#06b6d4]/10 via-[#2563eb]/5 to-transparent"
     >
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
