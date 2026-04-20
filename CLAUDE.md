@@ -99,9 +99,11 @@ Portfolio_Resume/
 - LeetCode: https://leetcode.com/u/tanhoang0803/
 
 ## Current Status (2026-04-20)
-- Phases 0–4 complete — site is live on Vercel
+- Phases 0–5 complete — site is live on Vercel
 - Formspree contact form active (ID: `mlgalbpg`)
-- Next: Phase 5 — GitHub Actions CI + SEO polish
+- GitHub Actions CI active — runs lint + type-check on every push/PR
+- sitemap.xml + robots.txt live
+- Next: Phase 6 — Contentful CMS + Resend email
 
 ---
 

@@ -67,6 +67,15 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 
 ---
 
+## CI/CD
+
+- **CI:** GitHub Actions — runs `type-check` + `lint` on every push/PR to `main`
+- **CD:** Vercel — auto-deploys on push to `main`
+- **Sitemap:** https://portfolio-seven-eosin-57.vercel.app/sitemap.xml
+- **Robots:** https://portfolio-seven-eosin-57.vercel.app/robots.txt
+
+---
+
 ## Getting Started
 
 ```bash

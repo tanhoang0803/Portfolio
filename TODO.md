@@ -61,13 +61,12 @@
 
 ---
 
-## Phase 5: CI/CD + Polish & SEO
-- [ ] GitHub Actions CI: lint + type-check on every push/PR
-  - [ ] `.github/workflows/ci.yml`
+## Phase 5: CI/CD + Polish & SEO ✅
+- [x] GitHub Actions CI: lint + type-check on every push/PR (`/.github/workflows/ci.yml`)
+- [x] `sitemap.xml` + `robots.txt` — Next.js App Router generated routes
+- [x] Section entrance animations (CSS fade-up keyframes on Hero)
 - [ ] `public/favicon.ico` — custom favicon
 - [ ] `public/og-image.png` — 1200×630 OG image
-- [ ] `sitemap.xml` + `robots.txt`
-- [ ] Section entrance animations (CSS keyframes)
 - [ ] Mobile responsiveness audit
 - [ ] Accessibility audit (keyboard nav, ARIA, contrast)
 - [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
