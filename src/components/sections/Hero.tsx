@@ -4,56 +4,57 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-b from-[#06b6d4]/10 via-[#2563eb]/5 to-transparent"
+      className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-r from-[#0f2460] via-[#1d4ed8] to-[#06b6d4]"
     >
-      {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#06b6d4]/5 blur-3xl" />
-        <div className="absolute top-1/2 left-1/4 w-[300px] h-[300px] rounded-full bg-[#2563eb]/5 blur-3xl" />
-      </div>
+      {/* Decorative glow circle — bottom left */}
+      <div
+        className="absolute -bottom-24 -left-24 w-[420px] h-[420px] rounded-full bg-white/5 blur-2xl pointer-events-none"
+        aria-hidden="true"
+      />
+      {/* Decorative glow circle — top right */}
+      <div
+        className="absolute -top-16 -right-16 w-[300px] h-[300px] rounded-full bg-[#06b6d4]/20 blur-3xl pointer-events-none"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#06b6d4]/30 bg-[#06b6d4]/5 mb-6">
-          <span className="w-2 h-2 rounded-full bg-[#06b6d4] animate-pulse" />
-          <span className="text-[#06b6d4] text-xs font-mono tracking-wider sm:tracking-widest uppercase">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/30 bg-white/10 mb-6 backdrop-blur-sm">
+          <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+          <span className="text-white/90 text-xs font-mono tracking-widest uppercase">
             Available for opportunities
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="animate-fade-up animation-delay-100 text-4xl sm:text-5xl md:text-7xl font-bold text-foreground leading-tight mb-4">
+        <h1 className="animate-fade-up animation-delay-100 text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-4">
           Junior{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#06b6d4] to-[#2563eb]">
+          <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
             Full-Stack
           </span>
           <br />
           Engineer
         </h1>
 
-
-        {/* Subheadline */}
-        <p className="animate-fade-up animation-delay-200 text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mb-4 leading-relaxed">
+        {/* Subheadlines */}
+        <p className="animate-fade-up animation-delay-200 text-white/80 text-lg sm:text-xl max-w-xl mx-auto mb-3 leading-relaxed">
           Building scalable enterprise systems with AI
         </p>
-        <p className="text-gray-400 text-sm max-w-md mx-auto mb-10">
-          Aiming to become a{" "}
-          <span className="text-gray-400">
-            Senior Enterprise Infrastructure Architect
-          </span>
+        <p className="text-white/60 text-sm max-w-md mx-auto mb-10">
+          Aiming to become a Senior Enterprise Infrastructure Architect
         </p>
 
         {/* CTAs */}
         <div className="animate-fade-up animation-delay-300 flex gap-4 justify-center flex-wrap mb-16">
           <a
             href="#projects"
-            className="px-6 py-3 rounded-lg bg-[#06b6d4] text-[#0a0a0a] font-semibold hover:bg-[#06b6d4]/90 transition-all hover:scale-105 active:scale-100"
+            className="px-6 py-3 rounded-lg bg-white text-[#1d4ed8] font-semibold hover:bg-white/90 transition-all hover:scale-105 active:scale-100 shadow-lg"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 rounded-lg border border-[#374151] text-gray-300 hover:border-[#06b6d4] hover:text-[#06b6d4] transition-all hover:scale-105 active:scale-100"
+            className="px-6 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition-all hover:scale-105 active:scale-100"
           >
             Get In Touch
           </a>
@@ -62,7 +63,7 @@ export default function Hero() {
         {/* Scroll hint */}
         <a
           href="#about"
-          className="inline-flex flex-col items-center gap-1 text-gray-400 hover:text-[#06b6d4] transition-colors"
+          className="inline-flex flex-col items-center gap-1 text-white/50 hover:text-white transition-colors"
           aria-label="Scroll to About"
         >
           <span className="text-xs font-mono">scroll</span>
