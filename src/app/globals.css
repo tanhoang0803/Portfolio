@@ -10,6 +10,16 @@
   --border: #374151;
 }
 
+:root.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #2563eb;
+  --accent: #0891b2;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --border: #e2e8f0;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -97,6 +107,16 @@ html {
 .animation-delay-300 { animation-delay: 300ms; }
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-500 { animation-delay: 500ms; }
+
+/* Light mode — remap gray text to slate equivalents for contrast */
+.light .text-gray-300 { color: #334155; }
+.light .text-gray-400 { color: #475569; }
+.light .text-gray-500 { color: #64748b; }
+.light .text-gray-600 { color: #475569; }
+.light .placeholder-gray-600::placeholder { color: #94a3b8; }
+
+/* Light mode — body background */
+.light body { background: var(--background); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

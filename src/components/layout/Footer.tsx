@@ -2,7 +2,7 @@ import { NAV_LINKS } from "@/constants/navigation";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#374151] bg-[#0a0a0a]">
+    <footer className="border-t border-border bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="absolute right-1 top-2 w-0.5 h-2 rounded-full bg-orange-400" />
               <span className="text-white font-extrabold text-[9px] tracking-tight">TH</span>
             </span>
-            <span className="text-sm font-medium text-white">Tan Hoang</span>
+            <span className="text-sm font-medium text-foreground">Tan Hoang</span>
           </div>
 
           {/* Nav links */}

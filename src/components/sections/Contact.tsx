@@ -75,7 +75,7 @@ export default function Contact() {
           <p className="text-[#06b6d4] text-xs font-mono tracking-widest uppercase mb-2">
             05. contact
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
             Let&apos;s Connect
           </h2>
           <div className="w-12 h-0.5 bg-gradient-to-r from-[#06b6d4] to-[#2563eb]" />
@@ -111,7 +111,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="w-10 h-10 rounded-xl border border-[#374151] bg-[#111827] flex items-center justify-center text-gray-500 hover:text-[#06b6d4] hover:border-[#06b6d4]/40 transition-all"
+                    className="w-10 h-10 rounded-xl border border-border bg-surface flex items-center justify-center text-gray-500 hover:text-[#06b6d4] hover:border-[#06b6d4]/40 transition-all"
                   >
                     <Icon />
                   </a>
@@ -131,7 +131,7 @@ export default function Contact() {
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center h-full gap-3 py-12 text-center">
                 <CheckCircle2 size={40} className="text-[#06b6d4]" />
-                <p className="text-white font-medium">Message sent!</p>
+                <p className="text-foreground font-medium">Message sent!</p>
                 <p className="text-gray-400 text-sm">
                   Thanks for reaching out. I&apos;ll get back to you soon.
                 </p>
@@ -155,7 +155,7 @@ export default function Contact() {
                       name="name"
                       required
                       placeholder="John Doe"
-                      className="w-full px-3 py-2.5 rounded-lg border border-[#374151] bg-[#111827] text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors"
+                      className="w-full px-3 py-2.5 rounded-lg border border-border bg-surface text-sm text-foreground placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors"
                     />
                   </div>
                   <div>
@@ -168,7 +168,7 @@ export default function Contact() {
                       name="email"
                       required
                       placeholder="john@example.com"
-                      className="w-full px-3 py-2.5 rounded-lg border border-[#374151] bg-[#111827] text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors"
+                      className="w-full px-3 py-2.5 rounded-lg border border-border bg-surface text-sm text-foreground placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors"
                     />
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function Contact() {
                     name="subject"
                     required
                     placeholder="Job opportunity / Collaboration / ..."
-                    className="w-full px-3 py-2.5 rounded-lg border border-[#374151] bg-[#111827] text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors"
+                    className="w-full px-3 py-2.5 rounded-lg border border-border bg-surface text-sm text-foreground placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors"
                   />
                 </div>
                 <div>
@@ -195,7 +195,7 @@ export default function Contact() {
                     required
                     rows={5}
                     placeholder="Tell me about the opportunity..."
-                    className="w-full px-3 py-2.5 rounded-lg border border-[#374151] bg-[#111827] text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors resize-none"
+                    className="w-full px-3 py-2.5 rounded-lg border border-border bg-surface text-sm text-foreground placeholder-gray-600 focus:outline-none focus:border-[#06b6d4]/60 transition-colors resize-none"
                   />
                 </div>
 

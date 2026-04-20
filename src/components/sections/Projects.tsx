@@ -11,7 +11,7 @@ export default async function Projects() {
           <p className="text-[#06b6d4] text-xs font-mono tracking-widest uppercase mb-2">
             03. projects
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
             Featured Projects
           </h2>
           <div className="w-12 h-0.5 bg-gradient-to-r from-[#06b6d4] to-[#2563eb]" />

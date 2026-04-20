@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="animate-fade-up animation-delay-100 text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-4">
+        <h1 className="animate-fade-up animation-delay-100 text-4xl sm:text-5xl md:text-7xl font-bold text-foreground leading-tight mb-4">
           Junior{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#06b6d4] to-[#2563eb]">
             Full-Stack
@@ -30,6 +30,7 @@ export default function Hero() {
           <br />
           Engineer
         </h1>
+
 
         {/* Subheadline */}
         <p className="animate-fade-up animation-delay-200 text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mb-4 leading-relaxed">

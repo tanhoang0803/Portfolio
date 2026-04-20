@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Briefcase } from "lucide-react";
+import { Menu, X, Briefcase, Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 import { NAV_LINKS } from "@/constants/navigation";
 import { SOCIAL_LINKS } from "@/constants/social";
 
@@ -36,6 +37,22 @@ const ICON_MAP = {
   briefcase: Briefcase,
 } as const;
 
+function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return <div className="w-8 h-8" />;
+  return (
+    <button
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      aria-label="Toggle theme"
+      className="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-[#06b6d4] hover:bg-[#06b6d4]/10 transition-colors"
+    >
+      {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+    </button>
+  );
+}
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -52,7 +69,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0a0a0a]/90 backdrop-blur-md border-b border-[#374151]"
+          ? "bg-background/90 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -69,7 +86,7 @@ export default function Header() {
             {/* TH text */}
             <span className="text-white font-extrabold text-[10px] tracking-tight">TH</span>
           </span>
-          <span className="font-semibold text-white text-sm tracking-wide">
+          <span className="font-semibold text-foreground text-sm tracking-wide">
             Tan Hoang
           </span>
         </a>
@@ -89,6 +106,7 @@ export default function Header() {
 
         {/* Desktop Social + CTA */}
         <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
           {SOCIAL_LINKS.map((s) => {
             const Icon = ICON_MAP[s.icon];
             return (
@@ -125,7 +143,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#111827] border-t border-[#374151] px-4 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-surface border-t border-border px-4 py-4 flex flex-col gap-4">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -136,7 +154,8 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <div className="flex items-center gap-4 pt-2 border-t border-[#374151]">
+          <div className="flex items-center gap-4 pt-2 border-t border-border">
+            <ThemeToggle />
             {SOCIAL_LINKS.map((s) => {
               const Icon = ICON_MAP[s.icon];
               return (

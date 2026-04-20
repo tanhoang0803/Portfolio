@@ -15,14 +15,14 @@ const LEARNING_RESOURCES = [
 
 export default function Learning() {
   return (
-    <section id="learning" className="py-24 px-4 bg-[#111827]">
+    <section id="learning" className="py-24 px-4 bg-surface">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="mb-12">
           <p className="text-[#06b6d4] text-xs font-mono tracking-widest uppercase mb-2">
             02. learning
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
             My Learning Space
           </h2>
           <div className="w-12 h-0.5 bg-gradient-to-r from-[#06b6d4] to-[#2563eb]" />
@@ -76,10 +76,10 @@ export default function Learning() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-start justify-between p-4 rounded-xl border border-[#374151] bg-[#0a0a0a] hover:border-[#06b6d4]/40 hover:bg-[#06b6d4]/5 transition-all group"
+                    className="flex items-start justify-between p-4 rounded-xl border border-border bg-background hover:border-[#06b6d4]/40 hover:bg-[#06b6d4]/5 transition-all group"
                   >
                     <div>
-                      <p className="text-sm font-medium text-white group-hover:text-[#06b6d4] transition-colors">
+                      <p className="text-sm font-medium text-foreground group-hover:text-[#06b6d4] transition-colors">
                         {label}
                       </p>
                       <p className="text-xs text-gray-400 mt-0.5">{note}</p>

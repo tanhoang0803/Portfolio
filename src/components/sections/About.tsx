@@ -27,7 +27,7 @@ export default function About() {
           <p className="text-[#06b6d4] text-xs font-mono tracking-widest uppercase mb-2">
             01. about
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
             About Me
           </h2>
           <div className="w-12 h-0.5 bg-gradient-to-r from-[#06b6d4] to-[#2563eb]" />
@@ -38,7 +38,7 @@ export default function About() {
           <div className="space-y-4">
             <p className="text-gray-300 leading-relaxed">
               Hi, I&apos;m{" "}
-              <span className="text-white font-medium">Tan Hoang</span> — a
+              <span className="text-foreground font-medium">Tan Hoang</span> — a
               motivated Junior Full-Stack Engineer based in Vietnam. I build
               full-stack web applications with a focus on clean code,
               performance, and real-world impact.
@@ -80,14 +80,14 @@ export default function About() {
             {FOCUS_AREAS.map(({ icon: Icon, title, desc }) => (
               <div
                 key={title}
-                className="p-4 rounded-xl border border-[#374151] bg-[#111827] hover:border-[#06b6d4]/40 transition-colors group"
+                className="p-4 rounded-xl border border-border bg-surface hover:border-[#06b6d4]/40 transition-colors group"
               >
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-[#06b6d4]/10 flex items-center justify-center shrink-0 group-hover:bg-[#06b6d4]/20 transition-colors">
                     <Icon size={16} className="text-[#06b6d4]" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-white mb-1">
+                    <h3 className="text-sm font-semibold text-foreground mb-1">
                       {title}
                     </h3>
                     <p className="text-xs text-gray-400 leading-relaxed">

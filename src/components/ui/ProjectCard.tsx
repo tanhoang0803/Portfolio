@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   const Icon = ICON_MAP[project.icon ?? "ExternalLink"] ?? ExternalLink;
 
   return (
-    <div className="group flex flex-col p-6 rounded-2xl border border-[#374151] bg-[#111827] hover:border-[#06b6d4]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.07)]">
+    <div className="group flex flex-col p-6 rounded-2xl border border-border bg-surface hover:border-[#06b6d4]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.07)]">
       {/* Top row */}
       <div className="flex items-start justify-between mb-4">
         <div className="w-10 h-10 rounded-xl bg-[#06b6d4]/10 flex items-center justify-center group-hover:bg-[#06b6d4]/20 transition-colors">
@@ -35,7 +35,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-gray-500 hover:text-white transition-colors"
+              className="text-gray-500 hover:text-foreground transition-colors"
             >
               <GitHubIcon size={18} />
             </a>
@@ -55,7 +55,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {/* Content */}
-      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#06b6d4] transition-colors">
+      <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-[#06b6d4] transition-colors">
         {project.title}
       </h3>
       <p className="text-sm text-gray-400 leading-relaxed mb-5 flex-1">
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.techTags.map((tag) => (
           <span
             key={tag}
-            className="text-xs px-2.5 py-1 rounded-full border border-[#374151] text-gray-400 bg-[#0a0a0a]"
+            className="text-xs px-2.5 py-1 rounded-full border border-border text-gray-400 bg-background"
           >
             {tag}
           </span>
