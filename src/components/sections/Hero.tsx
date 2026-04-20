@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
     >
       {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#06b6d4]/5 blur-3xl" />
         <div className="absolute top-1/2 left-1/4 w-[300px] h-[300px] rounded-full bg-[#2563eb]/5 blur-3xl" />
       </div>
@@ -61,7 +61,7 @@ export default function Hero() {
         {/* Scroll hint */}
         <a
           href="#about"
-          className="inline-flex flex-col items-center gap-1 text-gray-500 hover:text-[#06b6d4] transition-colors"
+          className="inline-flex flex-col items-center gap-1 text-gray-400 hover:text-[#06b6d4] transition-colors"
           aria-label="Scroll to About"
         >
           <span className="text-xs font-mono">scroll</span>
