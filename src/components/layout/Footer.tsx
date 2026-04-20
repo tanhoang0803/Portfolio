@@ -1,5 +1,5 @@
 import { NAV_LINKS } from "@/constants/navigation";
-import THMonogram from "@/components/ui/THMonogram";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
           <div className="flex items-center gap-2">
-            <THMonogram size={28} uid="footer" />
+            <Image src="/TH.png" alt="TH" width={28} height={28} className="rounded-xl" />
             <span className="text-sm font-medium text-foreground">Tan Hoang</span>
           </div>
 
