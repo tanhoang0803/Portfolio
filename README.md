@@ -85,6 +85,8 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 11 — Learning Section Expanded | ✅ |
 | 12 — Animated Skill Progress Bars | ✅ |
 | 13 — TH Logo Redesign (real PNG) | ✅ |
+| 14 — Hero Bold Gradient Banner | ✅ |
+| 15 — Header & Footer Dark Navy | ✅ |
 
 ---
 

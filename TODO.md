@@ -113,6 +113,9 @@
 - [x] Learning section expanded — Flash Cards sub-links (Cards, Cheat Sheet, Quiz Space), Codecademy, Udemy added
 - [x] Animated skill progress bars — IntersectionObserver, staggered fill, proficiency % per category
 - [x] TH logo redesigned — actual TH.png used in Header, Footer, and favicon (`src/app/icon.png` replaces `icon.tsx`)
+- [x] Hero redesigned — bold blue-to-cyan full-bleed gradient banner, white text, glass badge, high-contrast CTAs
+- [x] Header & Footer unified to dark navy (`#0f172a`), distinct from Hero gradient
+- [x] Footer height reduced to `py-4` (slim)
 - [ ] Blog section powered by Contentful
 - [ ] Stripe donation / "Buy me a coffee"
 - [ ] Firebase auth for admin panel

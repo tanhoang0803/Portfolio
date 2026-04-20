@@ -118,7 +118,10 @@ Portfolio_Resume/
 - Dark/light theme toggle live — `next-themes`, CSS variables, Sun/Moon in Header
 - Learning section — Flash Cards (Cards + Cheat Sheet + Quiz Space), Codecademy, Udemy
 - Animated skill progress bars — IntersectionObserver scroll trigger, staggered fill, proficiency % in `constants/skills.ts`
-- Remaining: cross-browser manual check
+- Hero section: bold `bg-gradient-to-r from-[#0f2460] via-[#1d4ed8] to-[#06b6d4]` full-bleed banner, white text, glass badge, decorative glow circles
+- Header & Footer: both use `bg-[#0f172a]` dark navy with `border-[#1e3a5f]` — distinct from Hero gradient
+- Footer padding: `py-4` (slim)
+- All phases complete — site fully live
 
 ---
 
