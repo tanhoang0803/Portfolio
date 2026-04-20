@@ -15,7 +15,7 @@ export default async function Projects() {
             Featured Projects
           </h2>
           <div className="w-12 h-0.5 bg-gradient-to-r from-[#06b6d4] to-[#2563eb]" />
-          <p className="text-gray-500 text-sm mt-4 max-w-xl">
+          <p className="text-gray-400 text-sm mt-4 max-w-xl">
             A selection of projects I&apos;ve built — from SaaS platforms to
             AI-powered tools and IoT systems.
           </p>

@@ -35,7 +35,7 @@ export default function Hero() {
         <p className="animate-fade-up animation-delay-200 text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mb-4 leading-relaxed">
           Building scalable enterprise systems with AI
         </p>
-        <p className="text-gray-500 text-sm max-w-md mx-auto mb-10">
+        <p className="text-gray-400 text-sm max-w-md mx-auto mb-10">
           Aiming to become a{" "}
           <span className="text-gray-400">
             Senior Enterprise Infrastructure Architect

@@ -79,7 +79,7 @@ export default function Contact() {
             Let&apos;s Connect
           </h2>
           <div className="w-12 h-0.5 bg-gradient-to-r from-[#06b6d4] to-[#2563eb]" />
-          <p className="text-gray-500 text-sm mt-4 max-w-md">
+          <p className="text-gray-400 text-sm mt-4 max-w-md">
             I&apos;m open to opportunities and collaborations. Drop me a message
             and I&apos;ll get back to you.
           </p>
@@ -89,7 +89,7 @@ export default function Contact() {
           {/* Left — info */}
           <div className="space-y-6">
             <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">
+              <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">
                 Email
               </p>
               <a
@@ -100,7 +100,7 @@ export default function Contact() {
               </a>
             </div>
             <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">
+              <p className="text-xs text-gray-400 uppercase tracking-wider mb-2">
                 Find me on
               </p>
               <div className="flex gap-4">
@@ -132,7 +132,7 @@ export default function Contact() {
               <div className="flex flex-col items-center justify-center h-full gap-3 py-12 text-center">
                 <CheckCircle2 size={40} className="text-[#06b6d4]" />
                 <p className="text-white font-medium">Message sent!</p>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-400 text-sm">
                   Thanks for reaching out. I&apos;ll get back to you soon.
                 </p>
                 <button
@@ -146,7 +146,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-xs text-gray-500 mb-1.5">
+                    <label htmlFor="name" className="block text-xs text-gray-400 mb-1.5">
                       Full Name *
                     </label>
                     <input
@@ -159,7 +159,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-xs text-gray-500 mb-1.5">
+                    <label htmlFor="email" className="block text-xs text-gray-400 mb-1.5">
                       Email *
                     </label>
                     <input
@@ -173,7 +173,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-xs text-gray-500 mb-1.5">
+                  <label htmlFor="subject" className="block text-xs text-gray-400 mb-1.5">
                     Subject *
                   </label>
                   <input
@@ -186,7 +186,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-xs text-gray-500 mb-1.5">
+                  <label htmlFor="message" className="block text-xs text-gray-400 mb-1.5">
                     Message *
                   </label>
                   <textarea

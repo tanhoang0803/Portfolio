@@ -51,7 +51,7 @@ export default function Learning() {
                   )}
                   <span
                     className={`text-sm leading-relaxed ${
-                      done ? "text-gray-500 line-through" : "text-gray-300"
+                      done ? "text-gray-400 line-through" : "text-gray-300"
                     }`}
                   >
                     {topic}
@@ -82,7 +82,7 @@ export default function Learning() {
                       <p className="text-sm font-medium text-white group-hover:text-[#06b6d4] transition-colors">
                         {label}
                       </p>
-                      <p className="text-xs text-gray-500 mt-0.5">{note}</p>
+                      <p className="text-xs text-gray-400 mt-0.5">{note}</p>
                     </div>
                     <ExternalLink
                       size={14}
@@ -99,7 +99,7 @@ export default function Learning() {
                 &ldquo;Every senior engineer was once a junior who kept
                 learning, shipping, and asking the hard questions.&rdquo;
               </p>
-              <footer className="text-xs text-gray-500 mt-2">
+              <footer className="text-xs text-gray-400 mt-2">
                 — Personal mantra
               </footer>
             </blockquote>

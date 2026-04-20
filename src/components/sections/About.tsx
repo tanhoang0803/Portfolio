@@ -66,7 +66,7 @@ export default function About() {
                 ["Status", "Open to work"],
               ].map(([label, value]) => (
                 <div key={label}>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-0.5">
+                  <p className="text-xs text-gray-400 uppercase tracking-wider mb-0.5">
                     {label}
                   </p>
                   <p className="text-sm text-gray-300">{value}</p>
@@ -90,7 +90,7 @@ export default function About() {
                     <h3 className="text-sm font-semibold text-white mb-1">
                       {title}
                     </h3>
-                    <p className="text-xs text-gray-500 leading-relaxed">
+                    <p className="text-xs text-gray-400 leading-relaxed">
                       {desc}
                     </p>
                   </div>
