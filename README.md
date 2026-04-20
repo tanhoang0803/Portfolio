@@ -2,7 +2,7 @@
 
 **Version:** 2026  
 **Author:** TanQHoang — hoangquoctan.1996@gmail.com  
-**Live:** _(deploy URL here)_
+**Live:** https://portfolio-seven-eosin-57.vercel.app
 
 > Modern single-page portfolio showcasing my profile as a Junior Full-Stack Developer aiming to become a Senior Enterprise Infrastructure Architect.
 
