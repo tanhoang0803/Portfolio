@@ -87,7 +87,6 @@ export default function Learning() {
             {/* Resources */}
             <div>
               <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5 flex items-center gap-2">
-                <ExternalLink size={14} className="text-[#06b6d4]" />
                 Resources
               </h3>
               <div className="space-y-3">
