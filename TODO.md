@@ -70,7 +70,7 @@
 - [x] `prefers-reduced-motion` media query added to globals.css
 - [ ] Mobile responsiveness audit
 - [ ] Accessibility audit (keyboard nav, ARIA, contrast)
-- [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
+- [x] Lighthouse scores: Performance 97, Accessibility 100, Best Practices 100, SEO 100
 
 ---
 
@@ -101,7 +101,7 @@
 - [x] Mark Gmail Resend email as "Not Spam" — resolved
 - [ ] Mobile responsiveness audit (manual)
 - [ ] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
-- [ ] Lighthouse score targets: Performance ≥90, Accessibility ≥95, SEO ≥95
+- [x] Lighthouse scores: Performance 97, Accessibility 100, Best Practices 100, SEO 100
 
 ---
 

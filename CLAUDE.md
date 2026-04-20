@@ -109,7 +109,8 @@ Portfolio_Resume/
 - sitemap.xml + robots.txt prerendered
 - Accessibility: form label/id pairs, aria-expanded, prefers-reduced-motion
 - Custom domain alias: `tanqhoang-portfolio.vercel.app` active on Vercel
-- Remaining: mobile audit, Lighthouse
+- Lighthouse: Performance 97, Accessibility 100, Best Practices 100, SEO 100
+- Remaining: mobile audit (manual)
 
 ---
 
