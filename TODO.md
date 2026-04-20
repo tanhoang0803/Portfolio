@@ -104,7 +104,7 @@
 - [x] Mark Gmail Resend email as "Not Spam" — resolved
 - [x] Mobile responsiveness audit — h1 responsive sizing, badge tracking, no overflow issues
 - [x] Lighthouse scores: Performance 97, Accessibility 100, Best Practices 100, SEO 100
-- [ ] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
+- [x] Cross-browser: Chrome, Firefox, Safari, Edge (manual)
 
 ---
 
