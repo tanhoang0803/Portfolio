@@ -18,6 +18,7 @@ interface ContentfulProjectFields {
   title: string;
   slug: string;
   description: Document;
+  techTags?: string[];
   liveUrl?: string;
   gitHubUrl?: string;
   featured: boolean;
@@ -25,11 +26,11 @@ interface ContentfulProjectFields {
 
 type ProjectSkeleton = EntrySkeletonType<ContentfulProjectFields, typeof CONTENT_TYPE>;
 
-// Static tech tags per slug — Contentful doesn't have this field yet
+// Static tech tags fallback — mirrors Contentful techTags field
 const TECH_TAGS: Record<string, string[]> = {
-  "telemedicine-booking-platform": ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "i18n"],
-  "recipe-finder-and-meal-planner": ["React", "OpenAI", "Node.js", "REST API", "Tailwind CSS"],
-  "smart-fleet-predictive-iot-engine": ["Node.js", "IoT", "Docker", "PostgreSQL", "Redis", "GitHub Actions"],
+  "telemedicine-booking-platform": ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "i18n", "MongoDB", "Resend", "Daily.co", "Contentful", "GitHub Actions", "Vercel"],
+  "recipe-finder-and-meal-planner": ["Render", "Vercel", "React", "Redux", "Node.js", "Express", "Supabase", "Redis", "Docker", "GitHub Actions"],
+  "smart-fleet-predictive-iot-engine": ["React", "Redux", "Firebase", "Tailwind", "Vite", "Spoonacular", "Groq", "GitHub Actions", "Node.js", "REST API"],
 };
 
 export async function getProjects(): Promise<Project[]> {
@@ -47,7 +48,12 @@ export async function getProjects(): Promise<Project[]> {
       description: item.fields.description
         ? documentToPlainTextString(item.fields.description as Document).trim()
         : "",
-      techTags: TECH_TAGS[item.fields.slug] ?? [],
+      techTags: (() => {
+        const tags = (item.fields as Record<string, unknown>).techTags;
+        return Array.isArray(tags) && tags.length > 0
+          ? (tags as string[])
+          : (TECH_TAGS[item.fields.slug] ?? []);
+      })(),
       liveUrl: item.fields.liveUrl ?? "",
       githubUrl: item.fields.gitHubUrl ?? "",
       featured: item.fields.featured ?? false,
