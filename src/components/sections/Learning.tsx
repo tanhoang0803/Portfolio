@@ -9,8 +9,29 @@ const CURRENT_FOCUS = [
   { topic: "OpenAI API — function calling, embeddings, RAG", done: false },
 ];
 
-const LEARNING_RESOURCES = [
-  { label: "My Flash Cards", href: "https://tanhoang0803.github.io/Fash-Cards-for-my-Life/", note: "Personal spaced-repetition system" },
+type SubLink = { label: string; href: string };
+type Resource = { label: string; href?: string; note: string; subLinks?: SubLink[] };
+
+const LEARNING_RESOURCES: Resource[] = [
+  {
+    label: "My Flash Cards",
+    note: "Personal spaced-repetition system — cards, cheat sheets & quiz practice",
+    subLinks: [
+      { label: "Flash Cards", href: "https://tanhoang0803.github.io/Fash-Cards-for-my-Life/" },
+      { label: "Cheat Sheet", href: "https://tanhoang0803.github.io/Fash-Cards-for-my-Life/cheatsheet.html" },
+      { label: "Quiz Space", href: "https://interview-quiz-space.vercel.app/" },
+    ],
+  },
+  {
+    label: "Codecademy",
+    href: "https://www.codecademy.com/learn?page=learning",
+    note: "Interactive coding courses & career paths",
+  },
+  {
+    label: "Udemy",
+    href: "https://www.udemy.com/home/my-courses/learning/",
+    note: "Video courses — system design, cloud & backend",
+  },
 ];
 
 export default function Learning() {
@@ -70,26 +91,50 @@ export default function Learning() {
                 Resources
               </h3>
               <div className="space-y-3">
-                {LEARNING_RESOURCES.map(({ label, href, note }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start justify-between p-4 rounded-xl border border-border bg-background hover:border-[#06b6d4]/40 hover:bg-[#06b6d4]/5 transition-all group"
-                  >
-                    <div>
-                      <p className="text-sm font-medium text-foreground group-hover:text-[#06b6d4] transition-colors">
-                        {label}
-                      </p>
-                      <p className="text-xs text-gray-400 mt-0.5">{note}</p>
+                {LEARNING_RESOURCES.map(({ label, href, note, subLinks }) =>
+                  subLinks ? (
+                    <div
+                      key={label}
+                      className="p-4 rounded-xl border border-border bg-background"
+                    >
+                      <p className="text-sm font-medium text-foreground mb-0.5">{label}</p>
+                      <p className="text-xs text-gray-400 mb-3">{note}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {subLinks.map((s) => (
+                          <a
+                            key={s.label}
+                            href={s.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full border border-[#06b6d4]/30 text-[#06b6d4] hover:bg-[#06b6d4]/10 transition-colors"
+                          >
+                            {s.label}
+                            <ExternalLink size={10} />
+                          </a>
+                        ))}
+                      </div>
                     </div>
-                    <ExternalLink
-                      size={14}
-                      className="text-gray-600 group-hover:text-[#06b6d4] transition-colors shrink-0 mt-0.5"
-                    />
-                  </a>
-                ))}
+                  ) : (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start justify-between p-4 rounded-xl border border-border bg-background hover:border-[#06b6d4]/40 hover:bg-[#06b6d4]/5 transition-all group"
+                    >
+                      <div>
+                        <p className="text-sm font-medium text-foreground group-hover:text-[#06b6d4] transition-colors">
+                          {label}
+                        </p>
+                        <p className="text-xs text-gray-400 mt-0.5">{note}</p>
+                      </div>
+                      <ExternalLink
+                        size={14}
+                        className="text-gray-600 group-hover:text-[#06b6d4] transition-colors shrink-0 mt-0.5"
+                      />
+                    </a>
+                  )
+                )}
               </div>
             </div>
 
