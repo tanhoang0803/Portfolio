@@ -49,7 +49,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | # | Section | Description |
 |---|---|---|
 | 1 | Hero | Headline, subheadline, CTA |
-| 2 | About Me | Bio + career goal |
+| 2 | About Me | Avatar photo, bio, career goal, quick facts, focus areas |
 | 3 | My Learning Space | Flash Cards, Cheat Sheet, Quiz Space, Codecademy, Udemy |
 | 4 | Projects | 3 featured project cards |
 | 5 | Skills & Stacks | Categorized tech grid |
@@ -114,6 +114,7 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 | 13 — TH Logo Redesign (real PNG) | ✅ |
 | 14 — Hero Bold Gradient Banner | ✅ |
 | 15 — Header & Footer Dark Navy | ✅ |
+| 16 — About Section Redesign (avatar + glow ring) | ✅ |
 
 ---
 

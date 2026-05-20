@@ -42,7 +42,7 @@
 - [x] `src/constants/projects.ts` — 3 static project entries
 - [x] `src/constants/skills.ts` — 7 skill categories
 - [x] `src/components/sections/Hero.tsx` — gradient glow, animated badge, CTAs, scroll hint
-- [x] `src/components/sections/About.tsx` — bio, career goal, quick facts, focus area cards
+- [x] `src/components/sections/About.tsx` — bio, career goal, quick facts, focus area cards, avatar profile photo
 - [x] `src/components/sections/Learning.tsx` — study checklist, flashcard link, quote
 - [x] `src/components/sections/Projects.tsx` — 3 project cards grid
 - [x] `src/components/ui/ProjectCard.tsx` — hover glow, tech tags, live/GitHub links
@@ -116,6 +116,7 @@
 - [x] Hero redesigned — bold blue-to-cyan full-bleed gradient banner, white text, glass badge, high-contrast CTAs
 - [x] Header & Footer unified to dark navy (`#0f172a`), distinct from Hero gradient
 - [x] Footer height reduced to `py-4` (slim)
+- [x] About section redesigned — avatar profile photo with glow ring, animated open-to-work badge, icon-based quick facts
 - [ ] Blog section powered by Contentful
 - [ ] Stripe donation / "Buy me a coffee"
 - [ ] Firebase auth for admin panel

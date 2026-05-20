@@ -98,7 +98,7 @@ Portfolio_Resume/
 - LinkedIn: https://www.linkedin.com/in/tanqhoang080396/
 - LeetCode: https://leetcode.com/u/tanhoang0803/
 
-## Current Status (2026-04-20)
+## Current Status (2026-05-20)
 - Phases 0–7 complete — site is fully live at https://tanqhoang-portfolio.vercel.app
 - Favicon: `TH.png` served via `src/app/icon.png` (replaces old `icon.tsx`)
 - OG image: 1200×630 branded card via `src/app/opengraph-image.tsx`
@@ -121,6 +121,7 @@ Portfolio_Resume/
 - Hero section: bold `bg-gradient-to-r from-[#0f2460] via-[#1d4ed8] to-[#06b6d4]` full-bleed banner, white text, glass badge, decorative glow circles
 - Header & Footer: both use `bg-[#0f172a]` dark navy with `border-[#1e3a5f]` — distinct from Hero gradient
 - Footer padding: `py-4` (slim)
+- About section redesigned — `public/avatar.jpg` (3×4 portrait), two-column layout (`lg:grid-cols-[300px_1fr]`), cyan/blue glow ring, animated open-to-work badge, icon-based quick facts
 - All phases complete — site fully live
 
 ---
