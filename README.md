@@ -96,25 +96,29 @@ It highlights my skills, learning journey, projects, and ambitions in enterprise
 
 ## Status
 
-| Phase | Status |
-|---|---|
-| 0 — Init & Config | ✅ |
-| 1 — Next.js Setup | ✅ |
-| 2 — Layout & Nav | ✅ |
-| 3 — All Sections | ✅ |
-| 4 — Deploy + Formspree | ✅ |
-| 5 — CI/CD + SEO | ✅ |
-| 6 — Contentful + Resend | ✅ |
-| 7 — Favicon + OG Image | ✅ |
-| 8 — Accessibility + Domain | ✅ |
-| 9 — Lighthouse + Mobile Audit | ✅ |
-| 10 — Dark/Light Theme Toggle | ✅ |
-| 11 — Learning Section Expanded | ✅ |
-| 12 — Animated Skill Progress Bars | ✅ |
-| 13 — TH Logo Redesign (real PNG) | ✅ |
-| 14 — Hero Bold Gradient Banner | ✅ |
-| 15 — Header & Footer Dark Navy | ✅ |
-| 16 — About Section Redesign (avatar + glow ring) | ✅ |
+All phases complete — site is fully live.
+
+| Phase | Description | Status |
+|---|---|---|
+| 0 | Init & Config | ✅ |
+| 1 | Next.js Setup | ✅ |
+| 2 | Layout & Nav | ✅ |
+| 3 | All Sections | ✅ |
+| 4 | Deploy + Formspree | ✅ |
+| 5 | CI/CD + SEO | ✅ |
+| 6 | Contentful + Resend | ✅ |
+| 7 | Favicon + OG Image | ✅ |
+| 8 | Accessibility + Domain | ✅ |
+| 9 | Lighthouse + Mobile Audit | ✅ |
+| 10 | Dark/Light Theme Toggle | ✅ |
+| 11 | Learning Section Expanded | ✅ |
+| 12 | Animated Skill Progress Bars | ✅ |
+| 13 | TH Logo Redesign (real PNG) | ✅ |
+| 14 | Hero Bold Gradient Banner | ✅ |
+| 15 | Header & Footer Dark Navy | ✅ |
+| 16 | About Section Redesign (avatar + glow ring) | ✅ |
+
+_Last updated: 2026-05-22_
 
 ---
 

@@ -108,7 +108,7 @@
 
 ---
 
-## Backlog / Future
+## Completed Backlog ✅
 - [x] Dark/light theme toggle — `next-themes`, Sun/Moon button in Header, CSS variables, light mode gray overrides
 - [x] Learning section expanded — Flash Cards sub-links (Cards, Cheat Sheet, Quiz Space), Codecademy, Udemy added
 - [x] Animated skill progress bars — IntersectionObserver, staggered fill, proficiency % per category
@@ -117,8 +117,17 @@
 - [x] Header & Footer unified to dark navy (`#0f172a`), distinct from Hero gradient
 - [x] Footer height reduced to `py-4` (slim)
 - [x] About section redesigned — avatar profile photo with glow ring, animated open-to-work badge, icon-based quick facts
+
+---
+
+## Future / Someday
 - [ ] Blog section powered by Contentful
+- [ ] OpenAI chat widget or AI-generated bio variation
 - [ ] Stripe donation / "Buy me a coffee"
 - [ ] Firebase auth for admin panel
 - [ ] OpenWeather widget
 - [ ] Resume PDF download
+
+---
+
+_Last updated: 2026-05-22_
