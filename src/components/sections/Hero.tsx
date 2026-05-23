@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -57,6 +57,14 @@ export default function Hero() {
             className="px-6 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition-all hover:scale-105 active:scale-100"
           >
             Get In Touch
+          </a>
+          <a
+            href="/resume/TanQHoang_Resume_EN.pdf"
+            download="TanQHoang_Resume_EN.pdf"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/60 text-white font-semibold hover:bg-white/10 transition-all hover:scale-105 active:scale-100"
+          >
+            <Download size={16} />
+            Download CV
           </a>
         </div>
 

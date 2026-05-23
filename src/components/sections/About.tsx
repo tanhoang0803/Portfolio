@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Target, Layers, Cpu, MapPin, Briefcase, TrendingUp, CheckCircle } from "lucide-react";
+import { Target, Layers, Cpu, MapPin, Briefcase, TrendingUp, CheckCircle, FileDown } from "lucide-react";
 
 const FOCUS_AREAS = [
   {
@@ -112,6 +112,16 @@ export default function About() {
                 products.
               </p>
             </div>
+
+            {/* Download Resume */}
+            <a
+              href="/resume/TanQHoang_Resume_EN.pdf"
+              download="TanQHoang_Resume_EN.pdf"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[#1e3a5f] bg-surface text-sm font-semibold text-[#06b6d4] hover:border-[#06b6d4]/60 hover:bg-[#06b6d4]/10 transition-all hover:scale-105 active:scale-100 w-fit"
+            >
+              <FileDown size={16} />
+              Download Resume
+            </a>
 
             {/* Divider */}
             <div className="w-full h-px bg-border" />

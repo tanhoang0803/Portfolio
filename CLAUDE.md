@@ -98,8 +98,9 @@ Portfolio_Resume/
 - LinkedIn: https://www.linkedin.com/in/tanqhoang080396/
 - LeetCode: https://leetcode.com/u/tanhoang0803/
 
-## Current Status (2026-05-22)
-- Phases 0–16 complete — site is fully live at https://tanqhoang-portfolio.vercel.app
+## Current Status (2026-05-23)
+- Phases 0–17 complete — site is fully live at https://tanqhoang-portfolio.vercel.app
+- Resume PDF: `public/resume/TanQHoang_Resume_EN.pdf` (148 KB) — "Download CV" in Hero CTAs, "Download Resume" in About section
 - Favicon: `TH.png` served via `src/app/icon.png` (replaces old `icon.tsx`)
 - OG image: 1200×630 branded card via `src/app/opengraph-image.tsx`
 - Logo: `public/TH.png` used in Header (`next/image`, 32px) and Footer (28px); favicon via `src/app/icon.png`

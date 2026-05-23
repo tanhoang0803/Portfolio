@@ -120,14 +120,25 @@
 
 ---
 
+## Phase 17: Resume PDF Download ✅
+- [x] Place `public/resume/TanQHoang_Resume_EN.pdf` — 148 KB static file
+- [x] Add "Download CV" button as third CTA in Hero (`src/components/sections/Hero.tsx`)
+  - Outlined white border, `Download` Lucide icon, same scale hover as existing CTAs
+- [x] Add "Download Resume" button to About section (`src/components/sections/About.tsx`)
+  - Below bio text, cyan accent style, `FileDown` Lucide icon
+- [x] Type-check passes — 0 errors
+- [x] Verify file is served correctly on Vercel (static from `public/`)
+- [x] Test download on mobile + desktop (Chrome, Firefox, Safari)
+
+---
+
 ## Future / Someday
 - [ ] Blog section powered by Contentful
 - [ ] OpenAI chat widget or AI-generated bio variation
 - [ ] Stripe donation / "Buy me a coffee"
 - [ ] Firebase auth for admin panel
 - [ ] OpenWeather widget
-- [ ] Resume PDF download
 
 ---
 
-_Last updated: 2026-05-22_
+_Last updated: 2026-05-23_

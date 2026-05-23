@@ -117,8 +117,9 @@ All phases complete — site is fully live.
 | 14 | Hero Bold Gradient Banner | ✅ |
 | 15 | Header & Footer Dark Navy | ✅ |
 | 16 | About Section Redesign (avatar + glow ring) | ✅ |
+| 17 | Resume PDF Download (Hero CTA + About button) | ✅ |
 
-_Last updated: 2026-05-22_
+_Last updated: 2026-05-23_
 
 ---
 
